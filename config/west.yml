@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: main # If this fails, try: v0.0.0-20241231 (or a known stable tag)
       import: app/west.yml
     - name: nice-view-gem
       remote: m165437
