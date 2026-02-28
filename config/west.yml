@@ -1,10 +1,4 @@
-manifest:
-  remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: m165437
-      url-base: https://github.com/m165437
-  projects:
+projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
@@ -12,5 +6,6 @@ manifest:
     - name: nice-view-gem
       remote: m165437
       revision: main
-  self:
-    path: config
+      # Adding a path ensures it stays in its own folder 
+      # and doesn't bleed into the main board search path incorrectly
+      path: boards/shields/nice-view-gem
