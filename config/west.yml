@@ -12,5 +12,7 @@ manifest:
     - name: nice-view-gem
       remote: m165437
       revision: main
+      path: config/boards/shields/nice-view-gem
+      import: false
   self:
     path: config
