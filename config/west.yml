@@ -1,11 +1,10 @@
+manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: m165437
       url-base: https://github.com/m165437
-projects:
+  projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
@@ -13,8 +12,5 @@ projects:
     - name: nice-view-gem
       remote: m165437
       revision: main
-      # Adding a path ensures it stays in its own folder 
-      # and doesn't bleed into the main board search path incorrectly
-      path: boards/shields/nice-view-gem
   self:
     path: config
